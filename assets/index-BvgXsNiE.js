@@ -274,7 +274,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: baseline;
-`,Hy=({setImages:e=()=>{}})=>T.jsxs(My,{children:[T.jsx(Ay,{children:"Gallery"}),T.jsxs(By,{children:[T.jsx($y,{text:"ADD IMAGE",plusIcon:T.jsx(Uy,{src:Fy}),setImages:e}),T.jsxs(Wy,{children:[T.jsx(_c,{children:T.jsx(Ec,{src:Dy})}),T.jsx(_c,{children:T.jsx(Ec,{src:Ly})})]})]})]}),Pl="/assets/dummy_image-mOw-EqHH.svg",Vy=M.div`
+`,Hy=({setImages:e=()=>{}})=>T.jsxs(My,{children:[T.jsx(Ay,{children:"Gallery"}),T.jsxs(By,{children:[T.jsx($y,{text:"ADD IMAGE",plusIcon:T.jsx(Uy,{src:Fy}),setImages:e}),T.jsxs(Wy,{children:[T.jsx(_c,{children:T.jsx(Ec,{src:Dy})}),T.jsx(_c,{children:T.jsx(Ec,{src:Ly})})]})]})]}),Pl="/widget-app/assets/dummy_image-mOw-EqHH.svg",Vy=M.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
