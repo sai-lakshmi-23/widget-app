@@ -4,8 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/widget-app/",
-  build: {
-    outDir: 'dist',
-  },
+  base: "/widget-app/"
 })
