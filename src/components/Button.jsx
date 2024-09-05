@@ -8,7 +8,7 @@ const CustomButton = styled.button`
   ${(props) =>
     props?.active &&
     "box-shadow: 17px 9px 24px 17px rgb(15, 16, 17), 0 2px 4px rgb(15, 16, 17)"};
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   width: 100%;
   display: flex;
