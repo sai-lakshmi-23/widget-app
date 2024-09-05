@@ -1,3 +1,4 @@
+//path- src\App.jsx
 import styled from "styled-components";
 import "./App.css";
 import WidgetContainer from "./pages/WidgetContainer";

@@ -1,3 +1,4 @@
+//path- src\components\PostHeader.jsx
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 import AddImageButton from "./AddImageButton";

@@ -1,3 +1,4 @@
+//path- src\pages\InnerContainer.jsx
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 

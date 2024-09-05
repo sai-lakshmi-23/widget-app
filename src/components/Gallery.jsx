@@ -1,3 +1,4 @@
+//path- src\components\Gallery.jsx
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 import Image from "../assets/dummy_image.svg";
