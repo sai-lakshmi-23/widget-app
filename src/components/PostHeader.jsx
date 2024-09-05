@@ -59,17 +59,19 @@ const IconWrapper = styled.button`
   width: 45px;
   height: 45px;
   background: linear-gradient(139.14deg, #303439 12.4%, #161718 94.96%);
-  box-shadow: 
-    0px 3.26px 3.26px 0px #FFFFFF26 inset, /* First shadow */
-    0px 0px 48.91px 0px #FFFFFF0D inset,   /* Second shadow */
-    4px 5px 30px 5px #101213, 
-    -5px -3px 30px -10px #96bee7;
+  // box-shadow: 
+  //   0px 3.26px 3.26px 0px #FFFFFF26 inset, /* First shadow */
+  //   0px 0px 48.91px 0px #FFFFFF0D inset,   /* Second shadow */
+  //   4px 5px 30px 5px #101213, 
+  //   -5px -3px 30px -10px #96bee7;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   margin: 5px;
+  box-shadow: 19px 20px 30px 3px #101213, -5px -3px 30px -10px #96BEE7;
+
   &:focus {
     outline: none;
   }
@@ -90,10 +92,10 @@ const PostHeader = ({setImages = () => {}}) => {
         <AddImageButton text="ADD IMAGE" plusIcon={<PlusIcon src={Plus} />} setImages={setImages}></AddImageButton>
         <BackWrapper>
           <IconWrapper>
-            <FabIcon src={LeftArrow} />
+            <FabIcon src={RightArrow} />
           </IconWrapper>
           <IconWrapper>
-            <FabIcon src={RightArrow} />
+            <FabIcon src={LeftArrow} />
           </IconWrapper>
         </BackWrapper>
       </Container>

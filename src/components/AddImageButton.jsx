@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 const CustomButton = styled.button`
   width: 70%;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
