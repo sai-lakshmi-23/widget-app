@@ -1,8 +1,10 @@
+//path- src\components\PostHeader.jsx
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 import AddImageButton from "./AddImageButton";
 import LeftArrow from "../assets/left_arrow.svg";
 import RightArrow from "../assets/right_arrow.svg";
+import Plus from "../assets/plus.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,10 +15,27 @@ const Wrapper = styled.div`
   border-radius: 23px;
   margin: 17px 53px 0px 0px;
   padding: 6px;
+  /* Styles for widths less than 1260px */
+  @media (max-width: 1260px) {
+      flex-wrap: wrap; /* Allow wrapping of buttons */
+      justify-content: flex-start; /* Align buttons to the start */
+    
+    > div {
+      flex: 1 1 calc(50% - 10px); /* Two buttons per row, accounting for gap */
+    }
+  }
+
+  /* Styles for widths less than 800px */
+  @media (max-width: 800px) {
+    > div {
+      flex: 1 1 100%; /* One button per row */
+    }
+  }
 `;
 const CustomLabel = styled.div`
   width: 149px;
   height: 62px;
+  font-family: "Poppins";
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -25,13 +44,17 @@ const CustomLabel = styled.div`
   box-shadow: 0px 4px 10px 2px #00000040 inset;
 `;
 const Container = styled.div`
-  width: 55%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
 const FabIcon = styled.img``;
+const PlusIcon = styled.img`
+  font-size: 12px;
+  margin-right: 5px;
+`;
 const IconWrapper = styled.button`
   width: 45px;
   height: 45px;
@@ -64,7 +87,7 @@ const PostHeader = ({setImages = () => {}}) => {
     <Wrapper>
       <CustomLabel>Gallery</CustomLabel>
       <Container>
-        <AddImageButton text="+ ADD IMAGE" setImages={setImages}></AddImageButton>
+        <AddImageButton text="ADD IMAGE" plusIcon={<PlusIcon src={Plus} />} setImages={setImages}></AddImageButton>
         <BackWrapper>
           <IconWrapper>
             <FabIcon src={LeftArrow} />
