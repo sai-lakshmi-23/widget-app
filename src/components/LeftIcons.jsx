@@ -1,7 +1,7 @@
 //path- src\components\LeftIcons.jsx
 import styled from "styled-components";
 import QuestionCircle from "../assets/question_circle.svg";
-import Boxes from "../assets/Boxes.svg";
+import Boxes from "../assets/boxes.svg";
 
 const Wrapper = styled.div`
   display: flex;
