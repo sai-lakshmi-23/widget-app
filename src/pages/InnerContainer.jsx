@@ -34,11 +34,14 @@ const Line = styled.div`
 `;
 
 const HeaderContainer = styled.div`
-  height: 35%;
+  // height: 35%;
   width: 100%;
 `;
 const BodyContainer = styled.div`
-  height: 55%;
+  // height: 55%;
+  margin-top: 20px;
+  height: 1px;
+  flex: 1;
   width: 100%;
 `;
 const LeftIconsContainer = styled.div`

@@ -15,6 +15,7 @@ const CustomButton = styled.button`
   justify-content: center;
   align-items: center;
   height: 49px;
+  font-family: "Poppins";
   border-radius: 16px;
   &:focus {
     outline: none;

@@ -26,14 +26,18 @@ const Wrapper = styled.div`
     }
   }
 `;
+
+const ImageWrapper = styled.img`
+  border-radius: 24px;
+`
 const Gallery = ({ images = [] }) => {
   return (
     <Wrapper>
-      <img src={Image} />
-      <img src={Image} />
-      <img src={Image} />
+      <ImageWrapper src={Image} />
+      <ImageWrapper src={Image} />
+      <ImageWrapper src={Image} />
       {images.map((image, index) => (
-        <img key={index} src={image} alt={`Uploaded ${index + 1}`} />
+        <ImageWrapper key={index} src={image} alt={`Uploaded ${index + 1}`} />
       ))}
     </Wrapper>
   );

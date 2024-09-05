@@ -4,12 +4,15 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  display: flex;
+  flex: 1;
   overflow-y: scroll;
-  height: 100%;
+  height: 90%;
   margin-right: 13px;
   margin-left: 5px;
   font-size: 20px;
   font-weight: 400;
+  font-family: "Plus Jakarta Sans";
   line-height: 25.2px;
   color: #969696;
   padding-right: 50px;

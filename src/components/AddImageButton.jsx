@@ -6,12 +6,13 @@ import { addImages } from '../slices/imagesSlice';
 import styled from 'styled-components';
 
 const CustomButton = styled.button`
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 95%;
   font-size: 12px;
+  font-weight: 700;
   height: 46px;
   color: #FFFFFF;
   border-radius: 104px;
@@ -27,7 +28,12 @@ const CustomButton = styled.button`
   }
 `;
 
-const AddImageButton = ({ text = 'Add Image' }) => {
+const Wrapper = styled.div`
+  width: 60%;
+  font-family: "Plus Jakarta Sans";
+`
+
+const AddImageButton = ({ text = 'Add Image', plusIcon = "" }) => {
   const fileInputRef = useRef(null);
   const dispatch = useDispatch();
 
@@ -42,8 +48,8 @@ const AddImageButton = ({ text = 'Add Image' }) => {
   };
 
   return (
-    <div>
-      <CustomButton onClick={handleButtonClick}>{text}</CustomButton>
+    <Wrapper>
+      <CustomButton onClick={handleButtonClick}>{[plusIcon, text]}</CustomButton>
       <input
         type="file"
         multiple
@@ -52,7 +58,7 @@ const AddImageButton = ({ text = 'Add Image' }) => {
         style={{ display: 'none' }}
         onChange={handleImageUpload}
       />
-    </div>
+    </Wrapper>
   );
 };
 
